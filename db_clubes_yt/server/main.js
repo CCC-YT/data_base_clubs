@@ -12,7 +12,7 @@ Meteor.startup(() => {
 
       var data_club_bio = JSON.parse(Assets.getText("bio_club.json"));
       
-      console.log(data_club_bio);
+      //console.log(data_club_bio);
 
       data_club_bio.forEach(function (item, index, array) {
         Club_Bio.insert(item);
@@ -24,7 +24,7 @@ Meteor.startup(() => {
 
     var data_miembro_bio = JSON.parse(Assets.getText("miembros_bio.json"));
 
-    console.log(data_miembro_bio);
+    //console.log(data_miembro_bio);
 
     data_miembro_bio.forEach(function (item, index, array) {
       Miembro_Bio.insert(item);
@@ -36,7 +36,7 @@ Meteor.startup(() => {
 
     var data_actividad_bio = JSON.parse(Assets.getText("actividades_bio.json"));
 
-    console.log(data_actividad_bio);
+    //console.log(data_actividad_bio);
 
     data_actividad_bio.forEach(function (item, index, array) {
       Actividad_Bio.insert(item);

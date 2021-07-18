@@ -1,0 +1,74 @@
+<template name = "club_nano">
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th> Id </th>
+                    <th> Nombre </th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                {{#each clubNano}}
+                <tr>
+                    <td> {{_id}} </td>
+                    <td> {{Nombre}} </td>
+                </tr>
+                {{/each}}
+            </tbody>
+            
+        </table>
+    </div>
+    </template>
+    
+    <template name = "miembro_nano">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id </th>
+                        <th> Nombre </th>
+                        <th> Apellido </th>
+                        <th> Correo </th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    {{#each miembroNano}}
+                    <tr>
+                        <td> {{_id}} </td>
+                        <td> {{Nombres}} </td>
+                        <td> {{Apellidos}} </td>
+                        <td> {{Correo}} </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+                
+            </table>
+        </div>
+    </template>
+    
+        <template name = "actividad_nano">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Id </th>
+                            <th> Nombre </th>
+                            <th> Estado </th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        {{#each actividadNano}}
+                        <tr>
+                            <td> {{_id}} </td>
+                            <td> {{Nombre}} </td>
+                            <td> {{Estado}} </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                    
+                </table>
+            </div>
+    </template>

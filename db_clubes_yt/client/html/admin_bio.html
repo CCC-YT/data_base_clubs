@@ -1,0 +1,74 @@
+<template name = "club_bio">
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th> Id </th>
+                <th> Nombre </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each clubBio}}
+            <tr>
+                <td> {{_id}} </td>
+                <td> {{Nombre}} </td>
+            </tr>
+            {{/each}}
+        </tbody>
+        
+    </table>
+</div>
+</template>
+
+<template name = "miembro_bio">
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th> Id </th>
+                    <th> Nombre </th>
+                    <th> Apellido </th>
+                    <th> Correo </th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                {{#each miembroBio}}
+                <tr>
+                    <td> {{_id}} </td>
+                    <td> {{Nombres}} </td>
+                    <td> {{Apellidos}} </td>
+                    <td> {{Correo}} </td>
+                </tr>
+                {{/each}}
+            </tbody>
+            
+        </table>
+    </div>
+</template>
+
+    <template name = "actividad_bio">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id </th>
+                        <th> Nombre </th>
+                        <th> Estado </th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    {{#each actividadBio}}
+                    <tr>
+                        <td> {{_id}} </td>
+                        <td> {{Nombre}} </td>
+                        <td> {{Estado}} </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+                
+            </table>
+        </div>
+</template>
