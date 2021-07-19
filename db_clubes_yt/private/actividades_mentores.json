@@ -1,0 +1,82 @@
+[
+  {
+    "_id": 300,
+    "Nombre": "Bienvenida a estudiantes de nivelación",
+    "Tipo": "Evento",
+    "Fecha_inicio": "2021-05-23",
+    "idCoordinador": "",
+    "idColaborador": "{300008,300015}",
+    "Description": "Concebido para dar la bienvenida a los nuevos estudiantes con la finalidad de hacer mas facil su incorporacion a la vida universitaria.",
+    "Estado": "Inactivo"
+  },
+  {
+    "_id": 301,
+    "Nombre": "Feria de Clubes",
+    "Tipo": "Evento",
+    "Fecha_inicio": "2021-05-14",
+    "idCoordinador": "{300024}",
+    "idColaborador": "",
+    "Description": "Dirigido para mostrar la variedad de  clubes y sus actividades de la universidad.",
+    "Estado": "Inactivo"
+  },
+  {
+    "_id": 302,
+    "Nombre": "Academic and Health",
+    "Tipo": "Proyecto",
+    "Fecha_inicio": "2020-11-28",
+    "idCoordinador": "",
+    "idColaborador": "{300024,300022}",
+    "Description": "Enfocado en potenciar las habilidades de disciplina, compromiso, organización y manejo de tiempos a través de actividades que fortalezcan los ámbitos mental, nutricional y físico del estudiante.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 303,
+    "Nombre": "Learning Coach",
+    "Tipo": "Proyecto",
+    "Fecha_inicio": "2020-11-11",
+    "idCoordinador": "{300015}",
+    "idColaborador": "",
+    "Description": "ideado con el fin de recopilar y enseñar tips para un mejor rendimiento academico y vida universitaria, aquellas herramietas que no te dan al inciar la Universidad pero son muy útiles para toda la carrera.",
+    "Estado": "Inactivo"
+  },
+  {
+    "_id": 304,
+    "Nombre": "Equilibrium",
+    "Tipo": "Proyecto",
+    "Fecha_inicio": "2020-12-17",
+    "idCoordinador": "",
+    "idColaborador": "{300012,300017}",
+    "Description": "Busca proveer un espacio seguro donde los estudiantes de la U puedan tratar abiertamente temas de salud emocional que afectan su rendimiento académico mediante la aplicación de terapia grupal con el fin de disminuir las tasas de deserción y asegurar el éxito estudiantil.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 305,
+    "Nombre": "Linked",
+    "Tipo": "Proyecto",
+    "Fecha_inicio": "2021-05-30",
+    "idCoordinador": "{300032}",
+    "idColaborador": "",
+    "Description": "Busca crear un comunicación entre escuelas para mantener informado a estudiantes y profesores de actividades, investigaciones, proyectos de vinculación, entre otros. Con la finalidad de poder formar una cominudad multidisciplinaria",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 306,
+    "Nombre": "Interfacultades",
+    "Tipo": "Proyecto",
+    "Fecha_inicio": "2021-05-01",
+    "idCoordinador": "{300021}",
+    "idColaborador": "",
+    "Description": "ideado para generar un impacto positivo en los estudiantes  mediante actividades ludicas y de ocio.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 307,
+    "Nombre": "Comunicación y Asesoría continua de estudiantes de nivelación y primer semestre",
+    "Tipo": "Evento",
+    "Fecha_inicio": "2021-04-22",
+    "idCoordinador": "",
+    "idColaborador": "{300015,300021}",
+    "Description": "Generado para realizar un seguimiento continuo de los estudiantes primerizos  despues de su bienvenida.",
+    "Estado": "Activo"
+  }
+]

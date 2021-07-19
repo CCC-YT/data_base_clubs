@@ -1,0 +1,47 @@
+_id,idClub,Apellidos,Nombres,CI,Correo,Carrera,Semestre,Comision,Cargo,Periodo,Estado
+300000,1002,Remache Vallejos,Angie Maithé,1004602270,angie.remache@yachaytech.edu.ec,Biomedicina,Octavo,Comunicación,,,activo
+300001,1002,Andrade Zambrano,Argenis Ronaldo,1350942031,argenis.andrade@yachaytech.edu.ec,TI,Octavo,Comunicación,,,activo
+300002,1002,Armijos Inga,Arianna Belen,750167181,arianna.armijos@yachaytech.edu.ec,TI,Séptimo,Actividades Extracurriculares,,,activo
+300003,1002,Mendoza Ochoa,Carlos Alfredo,1207022938,carlos.mendoza@yachaytech.edu.ec,Física,Noveno,Actividades Extracurriculares,,,activo
+300004,1002,Vaca Chanatasig,Cristina Magdalena,1205432931,cristina.vaca@yachaytech.edu.ec,Física,Noveno,Actividades Extracurriculares,,,activo
+300005,1002,Amaguaña Marmol,Daniel Alfredo,1724972714,daniel.amaguana@yachaytech.edu.ec,Biomedicina,Octavo,,,,activo
+300006,1002,de Llano García,Daniela,959479544,garcia.dellano@yachaytech.edu.ec,Química,Sexto,Actividades Extracurriculares,,,activo
+300007,1002,Arellano Haro,Daniela Estefania,1726049453,daniela.arellano@yachaytech.edu.ec,Nanotecnología,Séptimo,Proyectos,,,activo
+300008,1002,Baque Arteaga,Dayanna Michaelle,958613523,dayanna.baque@yachaytech.edu.ec,Biomedicina,Sexto,Eventos,Coordinadora,2021_1,activo
+300009,1002,Tapia Riera,Guido Samuel,981620363,guido.tapia@yachaytech.edu.ec,Matemática,Sexto,Comunicación,,,activo
+300010,1002,Cevallos Durán,Vinicio Javier,106983026,vinicio.cevallos@yachaytech.edu.ec,Nanotecnología,Sexto,Financiero,,,activo
+300011,1002,Jiménez Castro,Jean Carlos,1207083575,jean.jimenez@yachaytech.edu.ec,Química,Noveno,Actas,Coordinador,2021_1,activo
+300012,1002,Antón Mendieta,Jean Pierre,942771643,jean.anton@yachaytech.edu.ec,Geología,Séptimo,Comunicación,Coordinador,2021_1,activo
+300013,1002,Caicho Caranqui,Jhonny Israel,605564103,jhonny.caicho@yachaytech.edu.ec,Biomedicina,Noveno,Comunicación,,,activo
+300014,1002,Vinueza Cajas,Johanna Gabriela,1721393195,johanna.vinueza@yachaytech.edu.ec,TI,Quinto,Logística,,,activo
+300015,1002,Pico Vela,Jorge Salvador,1727396309,jorge.pico@yachaytech.edu.ec,Física,Sexto,Directiva,Presidente,2021_1,activo
+300016,1002,Brito Medina,Juan Diego,,juan.brito@yachaytech.edu.ec,TI,Séptimo,Logística,,,activo
+300017,1002,Loza Castro,Juana Elizabeth,953481561,juana.loza@yachaytech.edu.ec,Biomedicina,Sexto,Logística,,,activo
+300018,1002,Montesdeoca Arredondo,Kimberly Fernanda,1004332480,kimberly.montesdeoca@yachaytech.edu.ec,Química,Décimo,Actividades Extracurriculares,,,activo
+300019,1002,Robles Bonilla,Lisseth Salomé,105011316,lisseth.robles@yachaytech.edu.ec,Nanotecnología,Quinto,Comunicación,,,activo
+300020,1002,León Salto,María Belén,706715000,maria.leon@yachaytech.edu.ec,Química,Quinto,Comunicación,,,activo
+300021,1002,Bósquez Cáceres,María Fernanda,202412151,maria.bosquez@yachaytech.edu.ec,Química,Séptimo,Directiva,Vicepresidenta,2021_1,activo
+300022,1002,Humanante Guachilema,Mario Fernando,401524343,mario.humanante@yachaytech.edu.ec,Geología,Noveno,Actividades Extracurriculares,,,activo
+300023,1002,Aguilar Ramirez,Melany Nicole,1726918616,melany.aguilar@yachaytech.edu.ec,Nanotecnología,Séptimo,Directiva,Secretaria,2021_1,activo
+300024,1002,Osorio Sampedro,Nathaly Lisbeth,1751401637,nathaly.osorio@yachaytech.edu.ec,Nanotecnología,Sexto,Actividades Extracurriculares,Coordinadora,2021_1,activo
+300025,1002,Pijal Toapanta,Washington Danilo,1004917199,washington.pijal@yachaytech.edu.ec,TI,Septimo,,,,inactivo
+300026,1002,Inapanta Coque,Byron Raul,1752135416,byron.inapanta@yachaytech.edu.ec,Biomedicina,Cuarto,Proyectos,,,activo
+300027,1002,Galeas Albán,Dayana Marleyn,1719999839,dayana.galeas@yachaytech.edu.ec,Química,Sexto,Actas,Coordinadora,2021_1,activo
+300028,1002,Garzón Pardo,Alexis Mauricio,1724239858,alexis.garzon@yachaytech.edu.ec,Física,Quinto,Logística,,,activo
+300029,1002,Quelal Flores,Andres Fabricio,1004533160,andres.quelal@yachaytech.edu.ec,TI,Séptimo,Comunicación,,,activo
+300030,1002,Osorio Ordoñez,Daniela,802763144,daniela.osorio@yachaytech.edu.ec,Biomedicina,Sexto,Logística,Coordinadora,2021_1,activo
+300031,1002,Sevilla Flores,Deynna Lizbeth,1004754774,deynna.sevilla@yachaytech.edu.ec,Biomedicina,Sexto,Eventos,,,activo
+300032,1002,Paspuel Montalvo,Emilio José,1750669135,emilio.paspuel@yachaytech.edu.ec,Biomedicina,Sexto,Proyectos,,,activo
+300033,1002,Lasluisa Morocho,Hector Ronaldo,302671623,hector.lasluisa@yachaytech.edu.ec,Química,Sexto,Eventos,,,activo
+300034,1002,Cusangua Vargas,Jordy Mateo,1727887125,jordy.cusangua@yachaytech.edu.ec,Quimica,Quinto,Logística,,,activo
+300035,1002,Vera Alarcon,Jorge Emanuel,2450521840,jorge.vera@yachaytech.edu.ec,Quimica,Cuarto,Eventos,,,activo
+300036,1002,Salinas Tapia,Joseline Estefanía,350134904,joseline.salinas@yachaytech.edu.ec,Biologia,Cuarto,Eventos,,,activo
+300037,1002,Ocaña Cevallos,León Darío,1317921037,leon.ocana@yachaytech.edu.ec,Física,Quinto,Logística,,,activo
+300038,1002,Puchaicela Lozano,Marlene Stefanya,1104848047,marlene.puchaicela@yachaytech.edu.ec,Biomedicina,Sexto,Eventos,,,activo
+300039,1002,González Mera,Milene Karime,940291826,milene.gonzalez@yachaytech.edu.ec,Química,Sexto,Proyectos,Coordinadora,2021_1,activo
+300040,1002,Sallo Chabla,Nardy Jacqueline,705686160,nardy.sallo@yachaytech.edu.ec,Nanotecnología,Séptimo,Financiero,Coordinadora,2021_1,activo
+300041,1002,Chusin Cunuhay,Rubén Ricardo,504827668,ruben.chusin@yachaytech.edu.ec,Geología,Octavo,Eventos,,,activo
+300042,1002,Achig Merino,Vivian Yomaira,1726063231,vivian.achig@yachaytech.edu.ec,Quimica,Quinto,Logística,,,activo
+300043,1002,Peñaloza Tinoco,Danny Steven,705336527,danny.penaloza@yachaytech.edu.ec,Polímeros,Séptimo,Financiero,,,activo
+300044,1002,Calle Pinzon,Líder Andrés,1726729310,líder.calle@yachaytech.edu.ec,Química,Quinto,Eventos,,,activo
+300045,1002,Quiroz Arturo,Hector Andres,1759313479,hector.quiroz@yachaytech.edu.ec,Química,Octavo,Eventos,,,activo
