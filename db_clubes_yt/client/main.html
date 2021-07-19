@@ -3,13 +3,162 @@
 </head>
 
 <body>
-  <h1> Welcome to Admin Manager </h1>
-  {{> admin}}
+  <div class="container">
+
+    <!-- admin section-->
+    {{#if isInRole 'admin'}}
+    <h1> Welcome to Admin Manager </h1>
+    {{> loginButtons}}
+    {{> admin}}
+    {{/if}}
+
+    {{#if isInRole 'adminj'}}
+      <h1> Welcome to Adminj Manager </h1>
+      {{> loginButtons}}
+      {{> admin}}
+    {{/if}}
+
+    <!-- writer bio section-->
+    {{#if isInRole 'writer_bio_1'}}
+      <h1> Welcome to Bio Admin Manager 1 </h1>
+      {{> loginButtons}}
+      <h2> Club Bio Schema </h2>
+      {{> club_bio}}      
+      <br>
+      <h2> Members Bio Schema </h2>
+      {{> miembro_bio}}
+    {{/if}}
+
+    {{#if isInRole 'writer_bio_2'}}
+      <h1> Welcome to Bio Admin Manager 2 </h1>
+      {{> loginButtons}}
+      <h2> Activity Bio Schema </h2>
+      {{> actividad_bio}}
+    {{/if}}
+
+    <!-- writer nano section-->
+    {{#if isInRole 'writer_nano_1'}}
+      <h1> Welcome to Nano Admin Manager 1 </h1>
+      {{> loginButtons}}
+      <h2> Club Nano Schema </h2>
+      {{> club_nano}}      
+      <br>
+      <h2> Members Nano Schema </h2>
+      {{> miembro_nano}}
+    {{/if}}
+  
+    {{#if isInRole 'writer_nano_2'}}
+      <h1> Welcome to Nano Admin Manager 2 </h1>
+      {{> loginButtons}}
+      <h2> Activity Nano Schema </h2>
+      {{> actividad_nano}}
+    {{/if}}
+
+    <!-- writer ccc section-->
+    {{#if isInRole 'writer_ccc_1'}}
+      <h1> Welcome to CCC Admin Manager 1 </h1>
+      {{> loginButtons}}
+      <h2> Club CCC Schema </h2>
+      {{> club_bio}}      
+      <br>
+      <h2> Members CCC Schema </h2>
+      {{> miembro_bio}}
+    {{/if}}
+
+    {{#if isInRole 'writer_ccc_2'}}
+      <h1> Welcome to CCC Admin Manager 2 </h1>
+      {{> loginButtons}}
+      <h2> Activity CCC Schema </h2>
+      {{> actividad_bio}}
+    {{/if}}
+
+    <!-- writer men section-->
+    {{#if isInRole 'writer_men_1'}}
+      <h1> Welcome to Mentores Admin Manager 1 </h1>
+      {{> loginButtons}}
+      <h2> Club Mentores Schema </h2>
+      {{> club_bio}}      
+      <br>
+      <h2> Members Mentores Schema </h2>
+      {{> miembro_bio}}
+    {{/if}}
+
+    {{#if isInRole 'writer_men_2'}}
+      <h1> Welcome to Mentores Admin Manager 2 </h1>
+      {{> loginButtons}}
+      <h2> Activity Mentores Schema </h2>
+      {{> actividad_bio}}
+    {{/if}}
+
+    <!--report nano section -->
+    {{#if isInRole 'report_nano'}}
+      <h1> Welcome to Nano report </h1>
+      {{> loginButtons}}
+      <h2> Club Nano Schema </h2>
+      {{> club_nano}}
+      <br>
+      <h2> Members Nano Schema </h2>
+      {{> miembro_nano}}
+      <br>
+      <h2> Activity nano Schema </h2>
+      {{> actividad_nano}}
+    {{/if}}
+
+    <!--report bio section -->
+    {{#if isInRole 'report_bio'}}
+      <h1> Welcome to Bio report </h1>
+      {{> loginButtons}}
+      <h2> Club Bio Schema </h2>
+      {{> club_bio}}
+      <br>
+      <h2> Members Bio Schema </h2>
+      {{> miembro_bio}}
+      <br>
+      <h2> Activity Bio Schema </h2>
+      {{> actividad_bio}}
+    {{/if}}
+
+    <!--report ccc section -->
+    {{#if isInRole 'report_ccc'}}
+      <h1> Welcome to CCC report </h1>
+      {{> loginButtons}}
+      <h2> Club CCC Schema </h2>
+      {{> club_nano}}
+      <br>
+      <h2> Members CCC Schema </h2>
+      {{> miembro_nano}}
+      <br>
+      <h2> Activity CCC Schema </h2>
+      {{> actividad_nano}}
+    {{/if}}
+
+    <!--report men section -->
+    {{#if isInRole 'report_men'}}
+      <h1> Welcome to Mentores report </h1>
+      {{> loginButtons}}
+      <h2> Club Mentores Schema </h2>
+      {{> club_nano}}
+      <br>
+      <h2> Members Mentores Schema </h2>
+      {{> miembro_nano}}
+      <br>
+      <h2> Activity Mentores Schema </h2>
+      {{> actividad_nano}}
+    {{else}}
+      {{> inicio}}
+      {{> loginButtons}}
+    {{/if}}
+  </div>
 </body>
+
+<template name= "inicio">
+  <h1>Welcome to admin DataBase </h1>
+</template>
 
 <template name="admin">
   <h2> Club Bio Schema </h2>
   {{> club_bio}}
+  
   <br>
   <h2> Members Bio Schema </h2>
   {{> miembro_bio}}

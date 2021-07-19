@@ -8,6 +8,10 @@ import './html/admin_nano.html';
 import './js/admin_bio.js';
 import './js/admin_nano.js';
 
+Accounts.ui.config({
+  passwordSignupFields: 'USERNAME_AND_EMAIL'
+});
+
 /*Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
