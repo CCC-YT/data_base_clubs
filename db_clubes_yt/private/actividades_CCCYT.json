@@ -1,0 +1,152 @@
+[
+  {
+    "_id": 400,
+    "Nombre": "Reason4subjects",
+    "Tipo": "Evento",
+    "Fecha_Inicio": "2021-03-17",
+    "idCoordinador": "{400040}",
+    "idColaborador": "{400080}",
+    "Descripción": "Explicar mediante videos el por qué recibimos ciertas asignaturas en Tronco Común, independientemente de las carrera que se vaya a aseguir. Todo esto enfocado en la carrera de Tecnologias de la Información.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 401,
+    "Nombre": "Distro Project",
+    "Tipo": "Proyecto",
+    "Fecha_Inicio": "2021-02-19",
+    "idCoordinador": "",
+    "idColaborador": "{400080}",
+    "Descripción": "La educación universitaria orientada a la investigación, como lo es en Yachay Tech, requiere de ciertos programas informáticos a lo largo de nuestra formación científica. Incluso software compartido totalmente interdisciplinario. Distro Project busca crear una propia distribución Linux con los programas necesarios para los estudiantes de Yachay Tech.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 402,
+    "Nombre": "Compilando y Debuggeando",
+    "Tipo": "Evento",
+    "Fecha_Inicio": "2021-03-20",
+    "idCoordinador": "{400003}",
+    "idColaborador": "{400056,400065}",
+    "Descripción": "Serie de entrevistas informativas a invitados especiales respecto a temas para egresados de la carrera como: postgrados, campo laboral o investigación.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 403,
+    "Nombre": "Hamilton Tech",
+    "Tipo": "Proyecto",
+    "Fecha_Inicio": "2021-05-01",
+    "idCoordinador": "{400056}",
+    "idColaborador": "{400005}",
+    "Descripción": "Los estudiantes son el principal protagonista dentro de la educación que debe centrarse en las necesidades de los estudiantes, en sus inquietudes, en su curiosidad algo que difícilmente se consigue en un clase donde el profesor debe cumplir con un currículum a cabalidad. Tomando en cuenta el hecho de que los estudiantes de bachillerato se encuentran en una de las etapas más cruciales de sus formaciones, en dónde se definirán sus estudios universitarios de acuerdo a su conocimiento, se hace importante el hecho de que exista alguien que sea un apoyo para el profesor dentro de las actividades académicas de los estudiantes, quienes tienen la aspiración de graduarse satisfactoriamente del bachillerato e ingresar a una universidad, pero que muchas veces no tienen la suficiente ayuda ni la posibilidad de obtener información de calidad debido a la dificultad del acceso a tecnologías de la información que es recurrente en la mayoría de comunidades del Ecuador, por eso es que los participantes del proyecto presentado facilitarán el aprendizaje de los estudiantes con una serie de actividades de ayudantía de cátedra, que beneficiarán directamente a los estudiantes. Además de cumplir actividades de ayudantía de cátedra, los participantes del proyecto darán capacitaciones sobre nuevas tecnologías en educación a los profesores de la institución que muchas veces por desconocimiento no usan las nuevas herramientas tecnológicas que se posee para mejorar la calidad educativa y la interacción entre maestro y estudiante.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 404,
+    "Nombre": "Página Web",
+    "Tipo": "Proyecto",
+    "Fecha_Inicio": "2021-04-22",
+    "idCoordinador": "{400016}",
+    "idColaborador": "{400005,400047,400061}",
+    "Descripción": "A pesar de ser un club relativamente nuevo, buscamos expandir nuestro alcance cuanto podamos. Una página web creada por propios miembros del club es uno de nuestros proyectos más grandes con los que impulsaremos nuestra comunidad a seguir entusiasmados en el área de desarrollo web.",
+    "Estado": "Activo"
+  },
+  {
+    "_id": 405,
+    "Nombre": "ResearchYourWay",
+    "Tipo": "Evento",
+    "Fecha_Inicio": "2021-04-08",
+    "idCoordinador": "{400011}",
+    "idColaborador": "{400005,400016,400044}",
+    "Descripción": "Un evento que se desarrollo con el objetivo de dar a conocer las lineas de investigación que se estan desarrollando en el area de las Ciencias Computacionales dentro de la Universidad Yachay Tech",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 406,
+    "Nombre": "Math-IT Month",
+    "Tipo": "Evento",
+    "Fecha_Inicio": "2021-04-01",
+    "idCoordinador": "{400011}",
+    "idColaborador": "{400005,400049}",
+    "Descripción": "Una serie de eventos que se desarrollan a lo largo del mes de Abril relacionada las areas academicas que forman parte de la Esscuela de Ciencias Matematicas y Computacionales.",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 407,
+    "Nombre": "Deep Learning Course",
+    "Tipo": "Proyecto",
+    "Fecha_Inicio": "2021-03-22",
+    "idCoordinador": "{400025}",
+    "idColaborador": "{400075}",
+    "Descripción": "Un curso introductorio al deep learning en colaboración con el Club de Biomedicina y el Scientific Computing Group con el objetivo de capacitar a estudiantes en estas técnicas aplicables a proyectos interdisciplinarios.",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 408,
+    "Nombre": "Programación de bots",
+    "Tipo": "Curso",
+    "Fecha_Inicio": "",
+    "idCoordinador": "{400016}",
+    "idColaborador": "",
+    "Descripción": "Desarrollar programas informáticos cuya finalidad es ejecutar de manera automática tareas. Los bots de Discord, Telegram, Instagram, etc. se utilizan para toda clase de funciones y actividades.",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 409,
+    "Nombre": "Ciencia de datos",
+    "Tipo": "Curso",
+    "Fecha_Inicio": "",
+    "idCoordinador": "",
+    "idColaborador": "",
+    "Descripción": "Este curso le presenta las secciones necesarias de teoría y estadística de probabilidad, guiando desde los conceptos básicos hasta el nivel requerido para comenzar un viaje en la ciencia de datos. Además, cubrirá el pensamiento moderno sobre la selección de modelos y los usos novedosos de los modelos de regresión, un subconjunto de modelos lineales, que son la herramienta más importante en el análisis estadístico y la máquina aprendiendo.",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 410,
+    "Nombre": "Software libre",
+    "Tipo": "Curso",
+    "Fecha_Inicio": "",
+    "idCoordinador": "{400070}",
+    "idColaborador": "{400045}",
+    "Descripción": "Curso con diversos tópicos del Software Libre desde conceptos, instalación de Linux, diferencias entre Ubuntu y Windows, terminales, scripts bash y culminado con un proyecto final.",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 411,
+    "Nombre": "Programación Web",
+    "Tipo": "Curso",
+    "Fecha_Inicio": "",
+    "idCoordinador": "{400061}",
+    "idColaborador": "{400019,400080,400025}",
+    "Descripción": "Introducción acerca de herramientas para desarrollar el front-end del desarrollo web como html5, css3, jquery y javascript. Entre otros objetivos del curso están enseñar sobre la importancia del diseño web adaptable e introducir la programación en lenguaje JavaScript con el propósito de agregar contenido interactivo.",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 412,
+    "Nombre": "Latex",
+    "Tipo": "Curso",
+    "Fecha_Inicio": "",
+    "idCoordinador": "{400036}",
+    "idColaborador": "",
+    "Descripción": "Introducción a las herramientas de Latex, temas como: artículos, referencias, imágenes, tablas, tikz Package, estructura de documentos y más",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 413,
+    "Nombre": "Aprendizaje Automático",
+    "Tipo": "Curso",
+    "Fecha_Inicio": "",
+    "idCoordinador": "{400049}",
+    "idColaborador": "",
+    "Descripción": "Curso con diversos contenidos del campo del Machine Learning tales como: Pre-procesado de datos, regresión, clasificación, clustering, reinforcement learning, procesamiento de lenguajes naturales y deep learning.",
+    "Estado": "Finalizado"
+  },
+  {
+    "_id": 414,
+    "Nombre": "Python",
+    "Tipo": "Curso",
+    "Fecha_Inicio": "",
+    "idCoordinador": "{400063}",
+    "idColaborador": "",
+    "Descripción": "En el curso de Python conocerán la sintaxis de este lenguaje de programación, aprenderán a pensar como un programador para posteriormente diseñar algoritmos y encontrar soluciones a problemas.",
+    "Estado": "Finalizado"
+  }
+]
