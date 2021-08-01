@@ -7,6 +7,7 @@ import {Club_Nano, Miembro_Nano, Actividad_Nano} from '/imports/api/db_nano';
 Meteor.startup(() => {
   // code to run on server at startups
   // import data only when Bio collections are empty
+  
   if (Club_Bio.find().count() === 0) {
       console.log("Importing private/bio_club.json to db")
 
@@ -79,36 +80,41 @@ Meteor.startup(() => {
     })
   };
 
-  //Users and roles
-  //Create roles
-  Roles.createRole('admin');
-  Roles.createRole('adminj');
-  Roles.createRole('writer_nano_1');
-  Roles.createRole('writer_nano_2');
-  Roles.createRole('writer_bio_1');
-  Roles.createRole('writer_bio_2');
-  Roles.createRole('writer_ccc_1');
-  Roles.createRole('writer_ccc_2');
-  Roles.createRole('writer_men_1');
-  Roles.createRole('writer_men_2');
-  Roles.createRole('report_nano');
-  Roles.createRole('report_bio');
-  Roles.createRole('report_ccc');
-  Roles.createRole('report_men');
+  if (Meteor.roleAssignment.find().count() === 0) {
+    console.log("Checking Roles and Users.")
 
-  //Add users
-  Roles.addUsersToRoles('MNuwgxNWqShjdRHZR', 'admin');
-  Roles.addUsersToRoles('AXJWmxBSLZGELfojk', 'adminj');
-  Roles.addUsersToRoles('WnYTdSkAaDcpidB7g', 'writer_nano_1');
-  Roles.addUsersToRoles('hwLuB3pLcDRjqEdP5', 'writer_nano_2');
-  Roles.addUsersToRoles('kXJMHC5eDZajaaRz2', 'writer_bio_1');
-  Roles.addUsersToRoles('Yojdy4Mh8zwfSohQL', 'writer_bio_2');
-  Roles.addUsersToRoles('6wXPpGTfqHBCuybdi', 'writer_ccc_1');
-  Roles.addUsersToRoles('YeeSvWZKCXC46i8jA', 'writer_ccc_2');
-  Roles.addUsersToRoles('wijGKGPbQTHs5rDsc', 'writer_men_1');
-  Roles.addUsersToRoles('7oZzhjMm9eHLTJYvv', 'writer_men_2');
-  Roles.addUsersToRoles('rp5bvPqYc64xjEwpt', 'report_nano');
-  Roles.addUsersToRoles('xvN57EJ9ghquLC5G3', 'report_bio');
-  Roles.addUsersToRoles('aAs9NwMaLYzhsDv6d', 'report_ccc');
-  Roles.addUsersToRoles('LXN49ecWWSiTgdefi', 'report_men');
+    //Users and roles
+    //Create roles
+    Roles.createRole('admin');
+    Roles.createRole('adminj');
+    Roles.createRole('writer_nano_1');
+    Roles.createRole('writer_nano_2');
+    Roles.createRole('writer_bio_1');
+    Roles.createRole('writer_bio_2');
+    Roles.createRole('writer_ccc_1');
+    Roles.createRole('writer_ccc_2');
+    Roles.createRole('writer_men_1');
+    Roles.createRole('writer_men_2');
+    Roles.createRole('report_nano');
+    Roles.createRole('report_bio');
+    Roles.createRole('report_ccc');
+    Roles.createRole('report_men');
+
+    //Add users
+    Roles.addUsersToRoles('MNuwgxNWqShjdRHZR', 'admin');
+    Roles.addUsersToRoles('AXJWmxBSLZGELfojk', 'adminj');
+    Roles.addUsersToRoles('WnYTdSkAaDcpidB7g', 'writer_nano_1');
+    Roles.addUsersToRoles('hwLuB3pLcDRjqEdP5', 'writer_nano_2');
+    Roles.addUsersToRoles('kXJMHC5eDZajaaRz2', 'writer_bio_1');
+    Roles.addUsersToRoles('Yojdy4Mh8zwfSohQL', 'writer_bio_2');
+    Roles.addUsersToRoles('6wXPpGTfqHBCuybdi', 'writer_ccc_1');
+    Roles.addUsersToRoles('YeeSvWZKCXC46i8jA', 'writer_ccc_2');
+    Roles.addUsersToRoles('wijGKGPbQTHs5rDsc', 'writer_men_1');
+    Roles.addUsersToRoles('7oZzhjMm9eHLTJYvv', 'writer_men_2');
+    Roles.addUsersToRoles('rp5bvPqYc64xjEwpt', 'report_nano');
+    Roles.addUsersToRoles('xvN57EJ9ghquLC5G3', 'report_bio');
+    Roles.addUsersToRoles('aAs9NwMaLYzhsDv6d', 'report_ccc');
+    Roles.addUsersToRoles('LXN49ecWWSiTgdefi', 'report_men');
+  };
+
 });
