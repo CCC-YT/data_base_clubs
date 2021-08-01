@@ -1,4 +1,4 @@
-<template name = "club_bio">
+<template name = "club_bio_report">
 <div>
     <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
         <thead>
@@ -9,7 +9,7 @@
         </thead>
 
         <tbody>
-            {{#each clubBio}}
+            {{#each clubBioReport}}
             <tr>
                 <td> {{_id}} </td>
                 <td> {{Nombre}} </td>
@@ -21,7 +21,7 @@
 </div>
 </template>
 
-<template name = "miembro_bio">
+<template name = "miembro_bio_report">
     <div>
         <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
             <thead>
@@ -29,19 +29,17 @@
                     <th> Id </th>
                     <th> Nombre </th>
                     <th> Apellido </th>
-                    <th> Correo </th>
-                    <th> Eliminar </th>
+                    <th> Correo </th>                    
                 </tr>
             </thead>
     
             <tbody>
-                {{#each miembroBio}}
+                {{#each miembroBioReport}}
                 <tr>
                     <td> {{_id}} </td>
                     <td> {{Nombres}} </td>
                     <td> {{Apellidos}} </td>
-                    <td> {{Correo}} </td>
-                    <td> <button  type="button" class="del-miembro-bio btn btn-outline-danger">Eliminar</button> </td>
+                    <td> {{Correo}} </td>                    
                 </tr>
                 {{/each}}
             </tbody>
@@ -50,25 +48,23 @@
     </div>
 </template>
 
-    <template name = "actividad_bio">
+    <template name = "actividad_bio_report">
         <div>
             <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th> Id </th>
                         <th> Nombre </th>
-                        <th> Estado </th>
-                        <th> Eliminar </th>
+                        <th> Estado </th>                        
                     </tr>
                 </thead>
         
                 <tbody>
-                    {{#each actividadBio}}
+                    {{#each actividadBioReport}}
                     <tr>
                         <td> {{_id}} </td>
                         <td> {{Nombre}} </td>
                         <td> {{Estado}} </td>
-                        <td> <button type="button" class="del-actividad-bio btn btn-outline-danger">Eliminar</button> </td>
                     </tr>
                     {{/each}}
                 </tbody>

@@ -4,6 +4,8 @@
 import './main.html';
 import './html/admin_bio.html';
 import './html/admin_nano.html';
+import './html/report/bio.html';
+import './html/report/nano.html';
 
 import './js/admin_bio.js';
 import './js/admin_nano.js';

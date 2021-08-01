@@ -1,4 +1,4 @@
-<template name = "club_nano">
+<template name = "club_nano_report">
     <div>
         <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
             <thead>
@@ -9,7 +9,7 @@
             </thead>
     
             <tbody>
-                {{#each clubNano}}
+                {{#each clubNanoReport}}
                 <tr>
                     <td> {{_id}} </td>
                     <td> {{Nombre}} </td>
@@ -20,7 +20,7 @@
     </div>
     </template>
     
-    <template name = "miembro_nano">
+    <template name = "miembro_nano_report">
         <div>
             <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <thead>
@@ -28,19 +28,17 @@
                         <th> Id </th>
                         <th> Nombre </th>
                         <th> Apellido </th>
-                        <th> Correo </th>
-                        <th> Eliminar </th>
+                        <th> Correo </th>                        
                     </tr>
                 </thead>
         
                 <tbody>
-                    {{#each miembroNano}}
+                    {{#each miembroNanoReport}}
                     <tr>
                         <td> {{_id}} </td>
                         <td> {{Nombres}} </td>
                         <td> {{Apellidos}} </td>
-                        <td> {{Correo}} </td>
-                        <td> <button type="button" class="del-miembro-nano btn btn-outline-danger">Eliminar</button></td>
+                        <td> {{Correo}} </td>                        
                     </tr>
                     {{/each}}
                 </tbody>
@@ -49,25 +47,23 @@
         </div>
     </template>
     
-        <template name = "actividad_nano">
+        <template name = "actividad_nano_report">
             <div>
                 <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                     <thead>
                         <tr>
                             <th> Id </th>
                             <th> Nombre </th>
-                            <th> Estado </th>
-                            <th> Eliminar </th>
+                            <th> Estado </th>                            
                         </tr>
                     </thead>
             
                     <tbody>
-                        {{#each actividadNano}}
+                        {{#each actividadNanoReport}}
                         <tr>
                             <td> {{_id}} </td>
                             <td> {{Nombre}} </td>
-                            <td> {{Estado}} </td>
-                            <td> <button type="button" class="del-actividad-nano btn btn-outline-danger">Eliminar</button></td>
+                            <td> {{Estado}} </td>                            
                         </tr>
                         {{/each}}
                     </tbody>
