@@ -7,7 +7,7 @@ import {Club_Nano, Miembro_Nano, Actividad_Nano} from '/imports/api/db_nano';
 Meteor.startup(() => {
   // code to run on server at startups
   // import data only when Bio collections are empty
-  
+
   if (Club_Bio.find().count() === 0) {
       console.log("Importing private/bio_club.json to db")
 
@@ -80,11 +80,129 @@ Meteor.startup(() => {
     })
   };
 
+  //Users and roles
+  if (Meteor.users.find().count() === 0){
+    console.log("Inserting Users to Admin DB.");
+
+    Accounts.createUser(
+      {
+        _id: "1",
+        email: "admin@example.com",
+        password: "admin",
+        profile: { name: "admin" }
+      }
+    );
+
+    Accounts.createUser(      
+      {
+        _id: "2",
+        email: "admin_j@example.com",
+        password: "admin_j",
+        profile: { name: "admin_j" }
+      }      
+    );
+    Accounts.createUser(
+      {
+        _id: "3",
+        email: "writer_nano_1@example.com",
+        password: "writer_nano_1",
+        profile: { name: "writer_nano_1" }
+      }
+    );
+    Accounts.createUser(      
+      {
+        _id: "4",
+        email: "writer_nano_2@example.com",
+        password: "writer_nano_2",
+        profile: { name: "writer_nano_2" }
+      }      
+    );
+    Accounts.createUser(
+      {
+        _id: "5",
+        email: "writer_bio_1@example.com",
+        password: "writer_bio_1",
+        profile: { name: "writer_bio_1" }
+      }
+    );
+    Accounts.createUser(      
+      {
+        _id: "6",
+        email: "writer_bio_2@example.com",
+        password: "writer_bio_2",
+        profile: { name: "writer_bio_2" }
+      }
+    );
+    Accounts.createUser(
+      {
+        _id: "7",
+        email: "writer_ccc_1@example.com",
+        password: "writer_ccc_1",
+        profile: { name: "writer_ccc_1" }
+      }      
+    );
+    Accounts.createUser(
+      {
+        _id: "8",
+        email: "writer_ccc_2@example.com",
+        password: "writer_ccc_2",
+        profile: { name: "writer_ccc_2" }
+      }      
+    );
+    Accounts.createUser(
+      {
+        _id: "9",
+        email: "writer_men_1@example.com",
+        password: "writer_men_1",
+        profile: { name: "writer_men_1" }
+      }      
+    );
+    Accounts.createUser(
+      {
+        _id: "10",
+        email: "writer_men_2@example.com",
+        password: "writer_men_2",
+        profile: { name: "writer_men_2" }
+      }      
+    );
+    Accounts.createUser(
+      {
+        _id: "11",
+        email: "report_nano@example.com",
+        password: "report_nano",
+        profile: { name: "report_nano" }
+      }      
+    );
+    Accounts.createUser(
+      {
+        _id: "12",
+        email: "report_bio@example.com",
+        password: "report_bio",
+        profile: { name: "report_bio" }
+      }
+    );
+    Accounts.createUser(
+      {
+        _id: "13",
+        email: "report_ccc@example.com",
+        password: "report_ccc",
+        profile: { name: "report_ccc" }
+      }
+    );
+    Accounts.createUser(
+      {
+        _id: "14",
+        email: "report_men@example.com",
+        password: "report_men",
+        profile: { name: "report_men" }
+      }
+    )
+  };
+
+  //Create roles
   if (Meteor.roleAssignment.find().count() === 0) {
     console.log("Checking Roles and Users.")
 
-    //Users and roles
-    //Create roles
     Roles.createRole('admin');
     Roles.createRole('adminj');
     Roles.createRole('writer_nano_1');
@@ -99,22 +217,25 @@ Meteor.startup(() => {
     Roles.createRole('report_bio');
     Roles.createRole('report_ccc');
     Roles.createRole('report_men');
-
-    //Add users
-    Roles.addUsersToRoles('McKAoE9seGYSPE757', 'admin');
-    Roles.addUsersToRoles('AXJWmxBSLZGELfojk', 'adminj');
-    Roles.addUsersToRoles('WnYTdSkAaDcpidB7g', 'writer_nano_1');
-    Roles.addUsersToRoles('hwLuB3pLcDRjqEdP5', 'writer_nano_2');
-    Roles.addUsersToRoles('kXJMHC5eDZajaaRz2', 'writer_bio_1');
-    Roles.addUsersToRoles('Yojdy4Mh8zwfSohQL', 'writer_bio_2');
-    Roles.addUsersToRoles('6wXPpGTfqHBCuybdi', 'writer_ccc_1');
-    Roles.addUsersToRoles('YeeSvWZKCXC46i8jA', 'writer_ccc_2');
-    Roles.addUsersToRoles('wijGKGPbQTHs5rDsc', 'writer_men_1');
-    Roles.addUsersToRoles('7oZzhjMm9eHLTJYvv', 'writer_men_2');
-    Roles.addUsersToRoles('rp5bvPqYc64xjEwpt', 'report_nano');
-    Roles.addUsersToRoles('xvN57EJ9ghquLC5G3', 'report_bio');
-    Roles.addUsersToRoles('aAs9NwMaLYzhsDv6d', 'report_ccc');
-    Roles.addUsersToRoles('LXN49ecWWSiTgdefi', 'report_men');
-
   };
+
+  //console.log(Meteor.users.find().count())
+
+  //console.log(Meteor.users.find({"_id": '6dQY7E8tPkoQbDjTY'}));
+
+  //Add users to role
+  Roles.addUsersToRoles('PRhwnPDxJXRag654R', 'admin');
+  Roles.addUsersToRoles('WYRPaDHy9ZzSN94Ke', 'adminj');
+  Roles.addUsersToRoles('iSAsKNpa4izo7PmFY', 'writer_nano_1');
+  Roles.addUsersToRoles('5EhPB9QPbWpcBTM3F', 'writer_nano_2');
+  Roles.addUsersToRoles('Q6goma9kY5dr48Nkc', 'writer_bio_1');
+  Roles.addUsersToRoles('GydXb5DRqiudaM9Dx', 'writer_bio_2');
+  //Roles.addUsersToRoles('', 'writer_ccc_1');
+  //Roles.addUsersToRoles('', 'writer_ccc_2');
+  //Roles.addUsersToRoles('', 'writer_men_1');
+  //Roles.addUsersToRoles('', 'writer_men_2');
+  Roles.addUsersToRoles('bjiBvjBs82ZHNpdHi', 'report_nano');
+  Roles.addUsersToRoles('66jyh2a7LSZLiKpFb', 'report_bio');
+  //Roles.addUsersToRoles('', 'report_ccc');
+  //Roles.addUsersToRoles('', 'report_men');
 });
