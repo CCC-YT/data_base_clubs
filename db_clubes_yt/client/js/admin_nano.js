@@ -21,3 +21,15 @@ Template.actividad_nano.helpers({
         return Actividad_Nano.find({})
     }
 });
+
+Template.miembro_nano.events({
+    'click .del-miembro-nano': function(event){
+        Miembro_Nano.remove({'_id':this._id});
+    }
+});
+
+Template.actividad_nano.events({
+    'click .del-actividad-nano': function(event){
+        Actividad_Nano.remove({'_id':this._id});
+    }
+});

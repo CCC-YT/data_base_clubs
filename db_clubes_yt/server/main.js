@@ -101,7 +101,7 @@ Meteor.startup(() => {
     Roles.createRole('report_men');
 
     //Add users
-    Roles.addUsersToRoles('MNuwgxNWqShjdRHZR', 'admin');
+    Roles.addUsersToRoles('McKAoE9seGYSPE757', 'admin');
     Roles.addUsersToRoles('AXJWmxBSLZGELfojk', 'adminj');
     Roles.addUsersToRoles('WnYTdSkAaDcpidB7g', 'writer_nano_1');
     Roles.addUsersToRoles('hwLuB3pLcDRjqEdP5', 'writer_nano_2');
@@ -115,6 +115,6 @@ Meteor.startup(() => {
     Roles.addUsersToRoles('xvN57EJ9ghquLC5G3', 'report_bio');
     Roles.addUsersToRoles('aAs9NwMaLYzhsDv6d', 'report_ccc');
     Roles.addUsersToRoles('LXN49ecWWSiTgdefi', 'report_men');
-  };
 
+  };
 });

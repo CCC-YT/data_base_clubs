@@ -21,3 +21,15 @@ Template.actividad_bio.helpers({
         return Actividad_Bio.find({})
     }
 });
+
+Template.miembro_bio.events({
+    'click .del-miembro-bio': function(event){
+        Miembro_Bio.remove({'_id':this._id});
+    }
+});
+
+Template.actividad_bio.events({
+    'click .del-actividad-bio': function(event){
+        Actividad_Bio.remove({'_id':this._id});
+    }
+});
