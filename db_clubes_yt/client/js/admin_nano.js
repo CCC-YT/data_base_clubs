@@ -51,3 +51,27 @@ Template.actividad_nano.events({
         Actividad_Nano.remove({'_id':this._id});
     }
 });
+
+/*Filter bio members*/
+
+Template.miembro_nano.onRendered(function(){
+    $(document).ready(function(){
+        $("#input_nano").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#table_nano tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+    });
+});
+
+Template.actividad_nano.onRendered(function(){
+    $(document).ready(function(){
+        $("#input_nano_act").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#table_nano_act tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+    });
+});
