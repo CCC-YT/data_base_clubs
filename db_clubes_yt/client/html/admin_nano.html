@@ -76,4 +76,48 @@
                     
                 </table>
             </div>
-    </template>    </template>
+    </template>
+<template name="new_miembro_nano">
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Insertar
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color:#32cd32">Insertar Miembro Bio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="js-add-miembro-nano">
+              <input type="text" name="ci_nano" placeholder="C.I">
+              <br>
+              <input type="text" name="carrera_nano" placeholder="Carrera">
+              <br>
+              <input type="text" name="semestre_nano" placeholder="Semestres">
+              <br>
+              <input type="email" name="email_nano" placeholder="Email">
+              <br>
+              <input type="tel" name="phone_nano" placeholder="Celular" pattern="[0-9]{10}">
+              <br>
+              <input type="text" name="nombre_nano" placeholder="Nombres">
+              <br>
+              <input type="text" name="apellido_nano" placeholder="Apellidos">
+              <br>
+              <input type="text" name="estado_nano" placeholder="Estado">
+              <br>
+              <input type="text" name="directiva_nano" placeholder="Directiva">
+              <br>
+              <button class="btn btn-success"> Insertar </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
