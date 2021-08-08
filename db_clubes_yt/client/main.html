@@ -13,9 +13,24 @@
     {{/if}}
 
     {{#if isInRole 'adminj'}}
-      <h1 style="text-align: center;"> Welcome to Adminj Manager </h1>
+      <h1 > Welcome to Adminj Manager </h1>
       {{> loginButtons}}
-      {{> admin}}
+      <h2 style="text-align: center; color: #32cd32;"> Club Bio Schema </h2>
+      {{> club_bio_report}}
+      <br>
+      <h2 style="text-align: center; color: #32cd32;"> Members Bio Schema </h2>
+      {{> miembro_bio_report}}
+      <br>
+      <h2 style="text-align: center; color: #32cd32;"> Activity Bio Schema </h2>
+      {{> actividad_bio_report}}
+      <h2 style="text-align: center; color: #ff6f00;"> Club Nano Schema </h2>
+      {{> club_nano_report}}
+      <br>
+      <h2 style="text-align: center; color: #ff6f00;"> Members Nano Schema </h2>
+      {{> miembro_nano_report}}
+      <br>
+      <h2 style="text-align: center; color: #ff6f00;"> Activity nano Schema </h2>
+      {{> actividad_nano_report}}
     {{/if}}
 
     <!-- writer bio section-->

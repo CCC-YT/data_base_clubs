@@ -65,11 +65,33 @@ Template.miembro_bio.onRendered(function(){
     });
 });
 
+Template.miembro_bio_report.onRendered(function(){
+    $(document).ready(function(){
+        $("#input_bio_report").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#table_bio_report tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+    });
+});
+
 Template.actividad_bio.onRendered(function(){
     $(document).ready(function(){
         $("#input_bio_act").on("keyup", function() {
           var value = $(this).val().toLowerCase();
           $("#table_bio_act tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+    });
+});
+
+Template.actividad_bio_report.onRendered(function(){
+    $(document).ready(function(){
+        $("#input_bio_act_report").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#table_bio_act_report tr").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
           });
         });
@@ -108,7 +130,39 @@ Template.new_miembro_bio.events({
 		datereg: new Date(),
 		owner: Meteor.user()._id,
 		});
-		//alert('Saved!');
+		alert('Saved!');
+		return false;
+	}
+});
+
+/*Insert Actividades*/
+
+Template.new_actividad_bio.events({
+	'submit .js-add-actividad-bio':function(event){
+		var tipo, f_init, nomb, estado, f_fin, desc, id_cord, id_col;
+		tipo = event.target.tipo_act_bio.value;
+        f_init = event.target.finit_act_bio.value;
+        nomb = event.target.nombre_act_bio.value;
+        estado = event.target.estado_act_bio.value;
+        f_fin = event.target.ffin_act_bio.value;
+        desc = event.target.desc_act_bio.value;
+        id_cord = event.target.coordinador_act_bio.value;
+        id_col = event.target.colaborador_act_bio.value;
+		//console.log(tipo, f_init, nomb, estado, f_fin, desc, id_cord, id_col);
+
+		Actividad_Bio.insert({
+		Tipo: tipo,
+        Fecha_Inicio: f_init,
+		Nombre: nomb,
+        Estado: estado,
+        Fecha_Fin: f_fin,
+        Descripcion: desc,
+        IdCoordinador: id_cord,
+        IdColaboradores: id_col,
+		datereg: new Date(),
+		owner: Meteor.user()._id,
+		});
+		alert('Saved!');
 		return false;
 	}
 });

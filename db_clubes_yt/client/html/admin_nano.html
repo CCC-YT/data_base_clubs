@@ -18,11 +18,18 @@
             </tbody>
         </table>
     </div>
-    </template>
+</template>
     
-    <template name = "miembro_nano">
+<template name = "miembro_nano">
         <div>
-            <input class="form-control" id="input_nano" type="text" placeholder="Search..">
+            <div class="row">
+                <div class="col">
+                    {{> new_miembro_nano}}
+                </div>
+                <div class="col">
+                    <input class="form-control" id="input_nano" type="text" placeholder="Search..">
+                </div>
+            </div>
             <table id="table_nano" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <thead>
                     <tr>
@@ -41,18 +48,28 @@
                         <td> {{Nombres}} </td>
                         <td> {{Apellidos}} </td>
                         <td> {{Correo}} </td>
-                        <td> <button type="button" class="del-miembro-nano btn btn-outline-danger">Eliminar</button></td>
+                        <td> 
+                            <button type="button" class="del-miembro-nano btn btn-outline-danger">Eliminar</button>
+                            <button  type="button" class="# btn btn-outline-info">Actualizar</button>
+                        </td>
                     </tr>
                     {{/each}}
                 </tbody>
                 
             </table>
         </div>
-    </template>
+</template>
     
-        <template name = "actividad_nano">
+<template name = "actividad_nano">
             <div>
-                <input class="form-control" id="input_nano_act" type="text" placeholder="Search..">
+                <div class="row">
+                    <div class="col">
+                        {{> new_actividad_nano}}
+                    </div>
+                    <div class="col">
+                        <input class="form-control" id="input_nano_act" type="text" placeholder="Search..">
+                    </div>
+                </div>                
                 <table id="table_nano_act" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                     <thead>
                         <tr>
@@ -69,27 +86,31 @@
                             <td> {{_id}} </td>
                             <td> {{Nombre}} </td>
                             <td> {{Estado}} </td>
-                            <td> <button type="button" class="del-actividad-nano btn btn-outline-danger">Eliminar</button></td>
+                            <td> 
+                                <button type="button" class="del-actividad-nano btn btn-outline-danger">Eliminar</button>
+                                <button  type="button" class="# btn btn-outline-info">Actualizar</button>
+                            </td>
                         </tr>
                         {{/each}}
                     </tbody>
                     
                 </table>
             </div>
-    </template>
-  <template name="new_miembro_nano">
+</template>
+  
+<template name="new_miembro_nano">
 
     <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#btn_miembro_nano_modal">
         Insertar
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="btn_miembro_nano_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color:#32cd32">Insertar Miembro Bio</h5>
+            <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6f00">Insertar Miembro Nano</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -114,10 +135,52 @@
               <br>
               <input type="text" name="directiva_nano" placeholder="Directiva">
               <br>
-              <button class="btn btn-success"> Insertar </button>
+              <button class="btn btn-outline-warning"> Insertar </button>
             </form>
           </div>
         </div>
       </div>
     </div>
-  </template>
+</template>
+
+<template name="new_actividad_nano">
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#actividadNanoModal">
+        Insertar
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="actividadNanoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color:#ff6f00">Insertar Actividad Nano</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="js-add-actividad-nano">
+              <input type="text" name="tipo_act_nano" placeholder="Tipo">
+              <br>
+              <input type="date" name="finit_act_nano" placeholder="Fecha Inicio (YY-MM-DD)">
+              <br>
+              <input type="text" name="nombre_act_nano" placeholder="Nombre">
+              <br>
+              <input type="text" name="estado_act_nano" placeholder="Estado">
+              <br>
+              <input type="date" name="ffin_act_nano" placeholder="Fecha Fin (YY-YY-DD)">
+              <br>
+              <input type="text" name="desc_act_nano" placeholder="Brief description">
+              <br>
+              <input type="text" name="coordinador_act_nano" placeholder="Id Coordinador">
+              <br>
+              <input type="text" name="colaborador_act_nano" placeholder="Id Colaboradores">
+              <br>
+              <button class="btn btn-outline-warning"> Insertar </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</template>
