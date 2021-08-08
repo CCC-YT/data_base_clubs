@@ -74,4 +74,35 @@ Template.actividad_nano.onRendered(function(){
           });
         });
     });
+});Template.new_miembro_nano.events({
+    'submit .js-add-miembro-nano':function(event){
+        var ci, carrera, semestre, mail, phone, nomb, apel, estado, dir;
+        ci = event.target.ci_nano.value;
+        carrera = event.target.carrera_nano.value;
+        semestre = event.target.semestre_nano.value;
+        mail = event.target.email_nano.value;
+        phone = event.target.phone_nano.value;
+        nomb = event.target.nombre_nano.value;
+        apel = event.target.apellido_nano.value;
+        estado = event.target.estado_nano.value;
+        dir = event.target.directiva_nano.value;
+        //console.log('C.I: '+ci+' Nombre: '+nomb+' Phone: '+phone);
+
+        Miembro_Bio.insert({
+        IdClub: 1000,
+        CI: ci,
+        Carrerar: carrera,
+        Semestre: semestre,
+        Correo: mail,
+        Celular: phone,
+        Nombres: nomb,
+        Apellidos: apel,
+        Estado: estado,
+        Directiva: dir,
+        datereg: new Date(),
+        owner: Meteor.user()._id,
+        });
+        //alert('Saved!');
+        return false;
+    }
 });
