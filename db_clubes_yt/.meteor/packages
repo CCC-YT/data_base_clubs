@@ -28,3 +28,12 @@ aldeed:collection2
 accounts-ui
 accounts-password
 alanning:roles
+rolljee:bootstrap4
+meteortesting:mocha
+velocity:meteor-stubs
+xolvio:cleaner
+dburles:factory
+kadira:blaze-layout
+communitypackages:autoform-bootstrap4
+kadira:flow-router
+aldeed:autoform
