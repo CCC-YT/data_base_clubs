@@ -238,4 +238,10 @@ Meteor.startup(() => {
   Roles.addUsersToRoles('66jyh2a7LSZLiKpFb', 'report_bio');
   //Roles.addUsersToRoles('', 'report_ccc');
   //Roles.addUsersToRoles('', 'report_men');
+
+});
+
+//update autoform
+Meteor.publish('udate_miembro_bio', function(idDoc){
+  return Miembro_Bio.find({_id:idDoc})
 });

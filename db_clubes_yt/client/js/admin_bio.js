@@ -166,3 +166,14 @@ Template.new_actividad_bio.events({
 		return false;
 	}
 });
+
+//update 
+Template.update_miembro_bio.helpers({
+    UpdateMiembro(){
+        return Miembro_Bio;
+    },
+    thisDoc(){
+        Meteor.subscribe('update', '100050');
+        return Miembro_Bio.findOne({_id:'100050'})
+    }
+});

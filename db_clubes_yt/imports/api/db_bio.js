@@ -97,11 +97,14 @@ Miembro_Bio.attachSchema(new SimpleSchema({
       type: String,
       label: 'apellido'
    },
-   Comision:[{
-      type: String,
+   Comision:{
+      type: Array,
       label: 'comision miembro',
       required: false
-   }],
+   },
+   'Comision.$': {
+      type: String
+   },
    Estado:{
       type: Boolean,
       label: 'estado miembro',
@@ -164,3 +167,11 @@ Actividad_Bio.attachSchema(new SimpleSchema({
 },
 {tracker: Tracker}
 ));
+
+/*Miembro_Bio.allow({
+   update (userId, doc, fields, modifier){
+      return true
+   },
+
+   fetch: ['owner']
+});*/

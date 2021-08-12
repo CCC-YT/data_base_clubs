@@ -2,7 +2,11 @@
   <title>db_clubes_yt</title>
 </head>
 
-<body>
+<template name="layout1">
+  {{> Template.dynamic template=main}}
+</template>
+
+<template name="login">
   <div class="container">
 
     <!-- admin section-->
@@ -164,7 +168,7 @@
       {{> loginButtons}}
     {{/if}}
   </div>
-</body>
+</template>
 
 <template name= "inicio">
   <h1 style="text-align: center;">Welcome to admin DataBase </h1>
